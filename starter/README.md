@@ -1,7 +1,7 @@
 # store_api
 A store management application with search fuctionality
 
-# Add strter foler and run npm install
+# Add starter folder and run npm install
 To install dependencies: npm install
 import the dotenv lib
 
