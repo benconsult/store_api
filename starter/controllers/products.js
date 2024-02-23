@@ -1,9 +1,10 @@
 
-const getAllProductsStatic = (req,res)=>{
+const getAllProductsStatic = async (req,res)=>{
+    throw new Error('tesing async error')
     res.status(200).json({ msg:'products testing routes'})
 }
 
-const getAllProducts = (req,res)=>{
+const getAllProducts = async (req,res)=>{
     res.status(200).json({ msg:'product route'})
 }
 

@@ -26,3 +26,11 @@ Test http://localhost:3000/api/v1/products
 # Postman
 New collection : Store-API
 New request for test
+
+# Async errors
+express-async-error built in package already .... npmjs.com... npm install express-async-errors --save
+import into App.js
+Go to controller, throw the error---- no try catch block needed
+Then to error handler (handles how the error is being displayed) , to log the error for a test
+Also, check the error log on the console
+No need for next() as the throw new Error suffice
