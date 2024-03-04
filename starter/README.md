@@ -109,6 +109,7 @@ using postman: sort param
 add sort as a request param property
 remove the await from find() as we are going to chain sort to it
 await should be after sort()
+we are getting all products before we await for result
 for chain, split into array then join them together
 {{URL}}/products?sort=-name,-price
 
@@ -116,4 +117,10 @@ for chain, split into array then join them together
 Browser: fields?name,price
 Postman: {{URL}}/products/static  without passing anything
 In implementation, pass any property in query for search
+NB: can be used with sort in the postman param
+{{URL}}/products?sort=-name,-price&fields=name,price
+
+# limit and skip
+test with static method using postman
+
 
