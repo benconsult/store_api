@@ -39,3 +39,21 @@ No need for next() as the throw new Error suffice
 Using the provided API to create a backend schema
 Mongoose to create the schema object
 NB: enum for items in a drop-down
+
+# populate to db
+so as to filter data . Manual using post route or automate
+for this project: products.json file created - an array of objects
+create a js file - populate.js
+
+//Just like the way we connected to db in App.js
+using our env var - dotenv, connect to db, connect to our model, lastly our data we are passing
+Then connect to db, using model to populate
+create an async await to connect to db just like we did in App.js
+stop the server and use the node populate to spin to test our connection
+
+Remove all the product and use .create() i.e Task.create(req.body), just like what we have in the previous Task project - controller - createTask method, so pass these array of object in product.json
+Add another await to populate db
+node populate to run
+Go to Atlas to check
+Edit the .env to create a db name ?STORE_API i atlas
+
