@@ -91,3 +91,4 @@ if wrong company name is passed, returns empty object - hn.angolia.com/api/v1/se
 
 # search with regex
 resource - mongodb query operators
+{{URL}}/products?name=a&featured=true
