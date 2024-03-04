@@ -58,7 +58,19 @@ Go to Atlas to check
 Edit the .env to create a db name ?STORE_API i atlas
 
 # Basic find
+Using static
 find to search- mongoosejs 
 go to controller , import model product
 use with static method first to find({}) all products
 Test with postman 
+
+# Query param
+using dynamic way- search
+? to our route , i.e /products?name=john. postman params can alos be used 
+with check botton and send with postman
+log the output req query in the controller method
+console.log(req.query) to test on the console
+Then pass req.query in the find()
+Postman - {{URL}}/products?featured=true
+
+
