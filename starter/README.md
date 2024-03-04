@@ -92,3 +92,14 @@ if wrong company name is passed, returns empty object - hn.angolia.com/api/v1/se
 # search with regex
 resource - mongodb query operators
 {{URL}}/products?name=a&featured=true
+
+# sort
+using browser url
+?sort=name - asc
+?sort=-name - desc
+?sort=name,price - chain
+?sort=-name,-price - chain
+using mongoose
+filter with find()
+Product.find({}).sort('-name')
+Product.find({}).sort('-name price') -chain
