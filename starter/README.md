@@ -87,3 +87,7 @@ But if everything is unknown, it diplays all products
 add the company propery to req.query
 add the if condition to check if company property is passed
 if wrong company name is passed, returns empty object - hn.angolia.com/api/v1/search
+
+
+# search with regex
+resource - mongodb query operators
