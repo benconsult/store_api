@@ -103,3 +103,11 @@ using mongoose
 filter with find()
 Product.find({}).sort('-name')
 Product.find({}).sort('-name price') -chain
+
+# sort implementation
+using postman: sort param
+add sort as a request param property
+remove the await from find() as we are going to chain sort to it
+await should be after sort()
+for chain, split into array then join them together
+{{URL}}/products?sort=-name,-price
