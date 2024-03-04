@@ -57,3 +57,8 @@ node populate to run
 Go to Atlas to check
 Edit the .env to create a db name ?STORE_API i atlas
 
+# Basic find
+find to search- mongoosejs 
+go to controller , import model product
+use with static method first to find({}) all products
+Test with postman 
