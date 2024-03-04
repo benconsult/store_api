@@ -115,4 +115,5 @@ for chain, split into array then join them together
 # select
 Browser: fields?name,price
 Postman: {{URL}}/products/static  without passing anything
+In implementation, pass any property in query for search
 
