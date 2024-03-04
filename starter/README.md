@@ -73,4 +73,12 @@ console.log(req.query) to test on the console
 Then pass req.query in the find()
 Postman - {{URL}}/products?featured=true
 
+# mongoose v6 update
+before returns empty onject if property not found
+
+# Refractor with query object
+When query gets complex
+We need to filter property
+NB: if we pas the 2 properties and one is unknown, it will filter the correct property
+But if everything is unknown, it diplays all products
 
