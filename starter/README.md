@@ -34,3 +34,8 @@ Go to controller, throw the error---- no try catch block needed
 Then to error handler (handles how the error is being displayed) , to log the error for a test
 Also, check the error log on the console
 No need for next() as the throw new Error suffice
+
+# product model
+Using the provided API to create a backend schema
+Mongoose to create the schema object
+NB: enum for items in a drop-down
