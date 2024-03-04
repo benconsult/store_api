@@ -80,5 +80,10 @@ before returns empty onject if property not found
 When query gets complex
 We need to filter property
 NB: if we pas the 2 properties and one is unknown, it will filter the correct property
+ //if featured exists in the query,set a new property in queryObject, object.property
 But if everything is unknown, it diplays all products
 
+# company
+add the company propery to req.query
+add the if condition to check if company property is passed
+if wrong company name is passed, returns empty object - hn.angolia.com/api/v1/search

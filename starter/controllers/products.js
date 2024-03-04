@@ -6,15 +6,19 @@ const getAllProductsStatic = async (req,res)=>{
 }
 
 const getAllProducts = async (req,res)=>{
-    const {featured} = req.query
+    const {featured, company} = req.query
     const queryObject = {}
+    //if featured exists
     if(featured){
-        //set a new property in queryObject, object.property
         queryObject.featured = featured == 'true'? true : false
+    }
+//if company exists in the query
+    if(company){
+        queryObject.company = company
     }
     console.log(queryObject)
     const products = await Product.find(queryObject)
-    res.status(200).json({ products, nbHits:Product.length})
+    res.status(200).json({ products, nbHits: products.length})
 }
 
 module.exports = { getAllProducts, getAllProductsStatic }
