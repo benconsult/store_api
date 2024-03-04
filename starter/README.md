@@ -111,3 +111,8 @@ remove the await from find() as we are going to chain sort to it
 await should be after sort()
 for chain, split into array then join them together
 {{URL}}/products?sort=-name,-price
+
+# select
+Browser: fields?name,price
+Postman: {{URL}}/products/static  without passing anything
+
