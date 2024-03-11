@@ -123,4 +123,14 @@ NB: can be used with sort in the postman param
 # limit and skip
 test with static method using postman
 
+# pagination
+with implementation
+since req.query returns a string , we cast them with Number
+if none is provided, return another thing or default, i.e || default
+
+
+
+
+
+
 
