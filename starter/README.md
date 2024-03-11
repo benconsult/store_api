@@ -128,6 +128,11 @@ with implementation
 since req.query returns a string , we cast them with Number
 if none is provided, return another thing or default, i.e || default
 
+# filter
+?numericFilters=price>12&sort=price  -- browser
+Test the above with static
+
+
 
 
 
