@@ -131,6 +131,8 @@ if none is provided, return another thing or default, i.e || default
 # filter
 ?numericFilters=price>12&sort=price  -- browser
 Test the above with static
+We call the numericFilter, and pass the regex to see if there
+a match, then convert symbols to mongoose syntax $gt.
 
 
 
