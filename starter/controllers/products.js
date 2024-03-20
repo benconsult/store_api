@@ -31,7 +31,16 @@ const getAllProducts = async (req,res)=>{
         }
         const regEx = /\b(<|>|>=|=|<|<=)\b/g
         let filters = numericFilters.replace(regEx,(match)=>`-${operatorMap[match]}-`)
-        console.log(filters)
+        const options = ['price','rating']
+        filters = filters.split(',').forEach((item) => {
+            const [fields, operator, value] = item.split('-')
+           if(options.includes(fields)){
+            queryObject[fields] = {[operator]: Number(value)}
+           }
+        });
+
+        console.log(queryObject)
+
     }
     
     //console.log(queryObject)  because of chain: find().sort(), await comes after sort

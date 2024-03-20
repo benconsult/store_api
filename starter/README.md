@@ -134,6 +134,21 @@ Test the above with static
 We call the numericFilter, and pass the regex to see if there
 a match, then convert symbols to mongoose syntax $gt.
 
+# filter contd..
+To consider other option to pass , like price and rating as they cannot be converted to mongoose regexp
+
+split() object into array
+and iterate over the array
+Now, array destructuring for output of regex, price-$gt-40, const [field,operator,value]
+If priice and rating known as fiels are present in the array, then add property to queryObject
+
+Resource: Array destructuring
+
+{ price: { '$gte': 60 }, rating: { '$gte': 4 } }
+
+
+
+
 
 
 
