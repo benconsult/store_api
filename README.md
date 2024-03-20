@@ -1,2 +1,2 @@
 # store_api
-A store management application with search fuctionality
+A store management application with filtering, searching, and sorting fuctionalities.
